@@ -1,0 +1,9 @@
+{
+  "name": "Wildhogs – Route des Grandes Alpes",
+  "short_name": "Wildhogs Alpen",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4efe3",
+  "theme_color": "#18374b",
+  "icons": [{"src":"assets/icon.svg","sizes":"512x512","type":"image/svg+xml"}]
+}

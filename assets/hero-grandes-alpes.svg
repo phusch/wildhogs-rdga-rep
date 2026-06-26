@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 820">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#89aeb6"/><stop offset=".52" stop-color="#d9d4bf"/><stop offset="1" stop-color="#efe5d4"/></linearGradient>
+    <linearGradient id="mountain1" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d6d8cf"/><stop offset="1" stop-color="#6e7f79"/></linearGradient>
+    <linearGradient id="mountain2" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7c918c"/><stop offset="1" stop-color="#334f50"/></linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#40494c"/><stop offset="1" stop-color="#1c2d35"/></linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+  <rect width="1600" height="820" fill="url(#sky)"/>
+  <circle cx="1305" cy="155" r="76" fill="#e4ad4f" opacity=".9"/>
+  <path d="M0 440 170 250l108 112 131-217 144 190 103-131 133 171 155-249 165 215 92-114 141 179 168-198 90 117v495H0z" fill="url(#mountain1)"/>
+  <path d="m164 260 114 102 132-217 143 190 103-131 67 86-42-18-49 33-73-95-52 77-55-46-62 92-60-52-76 81z" fill="#f4f0e6" opacity=".88"/>
+  <path d="m838 311 106-185 165 215 92-114 141 179 168-198 90 117-44-19-45 39-88-106-55 61-42-31-83 103-41-43-65 68-92-113-74 71z" fill="#f3efe6" opacity=".9"/>
+  <path d="M0 542c192-102 325-83 459-22 130 60 246 78 377 15 185-89 366-83 764 80v205H0z" fill="url(#mountain2)"/>
+  <path d="M1600 820H468c211-177 283-201 425-177 170 28 340 40 707-95z" fill="url(#road)"/>
+  <path d="M699 772c158-99 292-104 482-95" fill="none" stroke="#f0d498" stroke-width="12" stroke-linecap="round" stroke-dasharray="30 26" opacity=".9"/>
+  <g transform="translate(1015 526) scale(1.2)" fill="#142732">
+    <circle cx="28" cy="90" r="31"/><circle cx="137" cy="90" r="31"/>
+    <path d="M28 90h42l22-42h47l27 42h-27l-18-24h-23L81 90H57l21-63h31l12 21h-19l-10-13-15 55z"/>
+    <circle cx="96" cy="13" r="18"/><path d="m88 30-29 29h25l23-24 23 20 17-9-27-28z"/>
+  </g>
+  <g transform="translate(830 600) scale(.72)" fill="#213841" opacity=".92">
+    <circle cx="28" cy="90" r="31"/><circle cx="137" cy="90" r="31"/>
+    <path d="M28 90h42l22-42h47l27 42h-27l-18-24h-23L81 90H57l21-63h31l12 21h-19l-10-13-15 55z"/>
+    <circle cx="96" cy="13" r="18"/><path d="m88 30-29 29h25l23-24 23 20 17-9-27-28z"/>
+  </g>
+  <g opacity=".22" filter="url(#soft)"><ellipse cx="1190" cy="690" rx="330" ry="44" fill="#000"/></g>
+</svg>
