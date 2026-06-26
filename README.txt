@@ -13,3 +13,8 @@ Alle übrigen Inhalte wurden unverändert beibehalten.
 
 Zusätzliche letzte Anpassung:
 - Textblock in der Hero-Karte durch das große Tourlogo ersetzt
+
+Neue Änderung V1.1 Hilfe:
+- zusätzliche Hilfeseite / Anleitung direkt in der App
+- Hilfe über Button und Reiter erreichbar
+- grafische Erklärung der wichtigsten Funktionen und Bereiche
