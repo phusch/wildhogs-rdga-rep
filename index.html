@@ -186,6 +186,7 @@
     .install-tip{margin-top:10px;font-size:.92rem;color:var(--muted)}
 
   </style>
+  <link rel="stylesheet" href="huschel-wildhogs-speicher.css?v=1.2.0">
 </head>
 <body>
 <main class="app">
@@ -1061,7 +1062,44 @@
     <strong>Wildhogs – Route des Grandes Alpes · Reiseplaner V1.1 Hilfe</strong><br>
     Grundlage: Huschel's Tour-Navigator vom 7.7.2026 · Reisezeitraum 10.–18.07.2026 · · Alle Zeiten, Öffnungen, Wetterlagen und Sperrungen vor der Fahrt live validieren.
   </div>
+  <!-- Huschel App Speicher – eigenständiger, gut sichtbarer Zugang. -->
+  <button type="button" id="hsOpen" class="hs-open" aria-label="Speichern und Backup öffnen" title="Speichern & Backup"><span class="hs-save-icon" aria-hidden="true">💾</span> Speicher</button>
 </main>
+
+<!-- Huschel App Speicher – zusätzliche Seite, Original-Reiseplanung unverändert -->
+<section id="hsView" class="hs-view" aria-label="Huschel App Speicher" hidden>
+ <div class="hs-inner">
+  <header class="hs-header"><button type="button" id="hsBack" class="hs-back">← Zurück</button><div><h2>Speichern &amp; Backup</h2><p>Wildhogs Route des Grandes Alpes · Checklisten · V1.2.0 Test</p></div></header>
+  <div id="hsLamp" class="hs-lamp" role="status">🟡 GitHub-Stand noch nicht geprüft</div>
+  <p class="hs-meta" id="hsMeta">Privater GitHub-Speicher · Revision: nicht geprüft</p>
+  <section id="hsAuthPanel" class="hs-section"><h3>🔐 Anmeldung</h3><div id="hsAuthStatus" class="hs-auth-status">⚪ Nicht angemeldet</div>
+   <div id="hsAuthInputs">
+    <label for="hsKey">Supabase Publishable Key</label><input id="hsKey" type="text" placeholder="sb_publishable_…" autocomplete="off" spellcheck="false">
+    <label for="hsEmail">E-Mail-Adresse</label><input id="hsEmail" type="email" value="huschka@eventdesign.com" autocomplete="username">
+    <label for="hsPass">Passwort</label><input id="hsPass" type="password" autocomplete="current-password">
+    <button type="button" id="hsLogin" class="hs-btn hs-primary">Anmelden</button>
+   </div>
+   <div id="hsSigned" hidden><p id="hsSignedEmail" class="hs-small"></p><button type="button" id="hsLogout" class="hs-btn">Abmelden</button></div>
+   <p class="hs-small">Auto-Login auf demselben Gerät. Passwort und GitHub-Token werden nicht in den Checklisten gespeichert.</p>
+  </section>
+  <section class="hs-section hs-github"><h3>☁️ GitHub – bevorzugter Speicher</h3>
+   <button type="button" id="hsGithubSave" class="hs-btn hs-primary">☁️ GitHub Speichern</button>
+   <button type="button" id="hsGithubLoad" class="hs-btn hs-cloudload">☁️ GitHub Laden</button>
+   <p class="hs-small">Bitte vor der ersten GitHub-Speicherung einmal <b>GitHub Laden</b> wählen. Privater Pfad: <code>wildhogs-reiseplaner/data.json</code>.</p>
+  </section>
+  <section class="hs-section"><h3>Lokaler Speicher</h3>
+   <div class="hs-row"><button type="button" id="hsLocalSave" class="hs-btn">Lokal speichern</button><button type="button" id="hsLocalLoad" class="hs-btn">Lokal laden</button></div>
+   <p class="hs-small">Die 60 Häkchen werden schon beim Anklicken automatisch lokal gespeichert. Diese Buttons erzeugen und laden einen zusätzlichen lokalen Schnappschuss.</p>
+  </section>
+  <section class="hs-section"><h3>JSON-Backup</h3>
+   <div class="hs-row"><button type="button" id="hsExport" class="hs-btn">JSON exportieren</button><button type="button" id="hsImport" class="hs-btn">JSON importieren</button></div>
+   <input id="hsFile" type="file" accept=".json,application/json" hidden>
+   <p class="hs-small">Unabhängige Sicherungsdatei. Beim Laden abweichender Daten erfolgt eine ausdrückliche Rückfrage.</p>
+  </section>
+  <div id="hsMessage" class="hs-message" role="status" aria-live="polite">Bereit. Öffne GitHub Laden, um den letzten privaten Speicherstand zu prüfen.</div>
+  <p class="hs-small">Gesichert werden ausschließlich die 60 veränderlichen Checklisten-Häkchen – nicht die fest veröffentlichten Tagesberichte, Karten, Bilder oder Links.</p>
+ </div>
+</section>
 <script>
   const tabs=[...document.querySelectorAll('.tab')];
   const panels=[...document.querySelectorAll('.panel')];
@@ -1084,5 +1122,6 @@
     });
   });
 </script>
+<script type="module" src="huschel-wildhogs-speicher.js?v=1.2.0"></script>
 </body>
 </html>

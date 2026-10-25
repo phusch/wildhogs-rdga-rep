@@ -1,0 +1,35 @@
+/* Huschel App Speicher – Wildhogs V1.2.0. Nur neue .hs-* Elemente. */
+.hs-open{position:fixed!important;right:max(14px,env(safe-area-inset-right))!important;bottom:calc(18px + env(safe-area-inset-bottom))!important;z-index:50!important;display:flex!important;align-items:center!important;gap:8px!important;padding:12px 16px!important;border:2px solid #f2d18f!important;border-radius:16px!important;background:#18374b!important;color:#fff!important;box-shadow:0 8px 28px rgba(16,35,46,.36)!important;font-size:15px!important;font-weight:850!important;cursor:pointer!important;opacity:1!important;visibility:visible!important}
+.hs-open:focus-visible{outline:3px solid #d2a13c;outline-offset:4px}
+.hs-open .hs-save-icon{font-size:22px;line-height:1}
+body.hs-page-open{background:#f4efe3!important}
+body.hs-page-open>.app{display:none!important}
+.hs-view[hidden],.hs-view [hidden]{display:none!important}
+.hs-view{min-height:100dvh;background:#f4efe3;color:#253c49;padding:24px 14px 60px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.45}
+.hs-inner{max-width:760px;margin:auto}
+.hs-header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+.hs-header h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(23px,5vw,31px);font-weight:600;line-height:1.2;color:#18374b;margin:0}
+.hs-header p{font-size:14px;color:#607680;margin:4px 0 0}
+.hs-back{background:#fffdf8;border:1px solid #b9c9c3;border-radius:12px;color:#234558;padding:12px 15px;font-weight:850;white-space:nowrap;cursor:pointer}
+.hs-lamp{font-size:19px;font-weight:850;line-height:1.35;border-radius:18px;border:2px solid #d2a13c;background:#fff4d7;color:#7a5318;padding:19px 18px}
+.hs-lamp.ok{background:#dff5e5;border-color:#65ad7b;color:#195c3b}
+.hs-lamp.error{background:#ffeded;border-color:#dc8181;color:#922c33}
+.hs-meta{font-size:13px;color:#587080;margin:13px 3px 19px;overflow-wrap:anywhere}
+.hs-section{background:#fffdf8;border:1px solid #ded1bd;border-radius:17px;padding:19px;margin:14px 0;box-shadow:0 5px 15px rgba(24,55,75,.04)}
+.hs-section.hs-github{border:2px solid #7b9f9d;background:#f7fbf9}
+.hs-section.hs-auth-ok{border-color:#78b18c}
+.hs-section h3{margin:0 0 12px;color:#18374b;font-size:18px;font-weight:850}
+.hs-section label{font-size:13px;color:#3a5562;display:block;font-weight:750;margin-top:11px}
+.hs-section input:not([type=file]){display:block;width:100%;min-width:0;background:#fff;border:1px solid #b9c9c3;border-radius:10px;color:#243846;font:inherit;font-size:16px;padding:12px;margin-top:5px}
+.hs-btn{display:block;width:100%;border-radius:11px;padding:14px 10px;margin:9px 0;border:1px solid #afbec5;background:#ebf0ee;color:#1c475a;font-family:inherit;font-size:16px;font-weight:850;text-align:center;cursor:pointer}
+.hs-btn:disabled{opacity:.5;cursor:wait}
+.hs-primary{background:#1e668f;border-color:#1e668f;color:#fff}
+.hs-cloudload{background:#e0edf0;border-color:#88acbb;color:#174e6b}
+.hs-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.hs-small{font-size:13px;color:#627681;line-height:1.5;margin:9px 0 0}
+.hs-auth-status{padding:12px 14px;border-radius:11px;background:#eff1ef;border:1px solid #d1dedb;color:#50646c;font-weight:760;font-size:14px}
+.hs-auth-status.ok{background:#e1f7e8;border-color:#79b993;color:#1c613c}
+.hs-auth-status.error{background:#ffeded;border-color:#d9959b;color:#91353d}
+.hs-message{margin:20px 0;padding:14px 17px;white-space:pre-wrap;overflow-wrap:anywhere;background:#fff;border-left:4px solid #779a9d;border-radius:0 11px 11px 0;color:#294b5f;font-size:14px}
+@media(max-width:520px){.hs-header{gap:10px}.hs-back{padding:10px;font-size:14px}.hs-lamp{padding:15px;font-size:17px}.hs-section{padding:14px}.hs-row .hs-btn{font-size:14px;padding:12px 6px}.hs-open{right:12px!important;bottom:calc(12px + env(safe-area-inset-bottom))!important;padding:10px 13px!important}}
+@media print{.hs-open,.hs-view{display:none!important}}
